@@ -21,7 +21,7 @@ repository               : "Yuxuan-THU/yuxuan-thu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "avatar.jpg"
   name             : "Yuxuan Su"
   pronouns         : # example: "she/her"  
   bio              : "A fan of computational political science"
