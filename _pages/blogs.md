@@ -14,11 +14,18 @@ Listed below are my areas of interest.
 
     I consider academic research as my **current** area of interest. While my research interests encompass a broad spectrum, I am particularly intrigued by authoritarian regimes and their diverse implementation methods. My overarching aim is to gain insight into contemporary China by delving into its historical context. For me, historical documents serve as crucial lenses through which to observe and analyze present-day China.
 
+* **Computer Science**
+
+    
+
 Below, you'll find a list of things I'm somewhat interested in.
 
-* I maintain a respectful distance from the following things.
+I maintain a respectful distance from the following things.
 
-    chemistry, physics, Chinese philosophy and foreign philosophy, foreign language and literature, aesthetics, religious studies, and ideological education.
+* chemistry and physics
+* Chinese philosophy and foreign philosophy, foreign language and literature
+* aesthetics, religious studies
+* ideological education
 
-    If you have intriguing findings in these areas, feel free to discuss them with me. Despite my lack of enthusiasm in these fields, I am more than willing to listen to substantial research results and share my thoughts. However, please refrain from discussing the **last item**.
+    If you have intriguing findings in these areas, feel free to discuss them with me. Despite my lack of enthusiasm in these fields, I am more than willing to listen to substantive research results and share my thoughts. However, please refrain from discussing the **last item**.
 
