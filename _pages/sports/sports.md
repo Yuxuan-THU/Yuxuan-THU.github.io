@@ -5,6 +5,4 @@ permalink: /sports/
 author_profile: true
 ---
 
-<p>
-    Football, with today's <a href="/new.html">fixture</a>.
-</p>
+![图1](_pages/sports/marathon2023-1.jpg)
