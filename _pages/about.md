@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am a junior undergrad majoring in History at Tsinghua University. My research interests encompass **Chinese politics** and **computational political science**. I have a particular inclination towards utilizing historical literature and empirical methods as my primary tools for understanding Chinese politics and society.
+Hi there! I am a junior undergrad majoring in History at Tsinghua University. My research interests encompass **Chinese politics** and **computational political science**. 
 
 I have a passion for long-distance running and cycling, and I also open to other topics. Feel free to reach out if you'd like to discuss any intriguing ideas!
 
