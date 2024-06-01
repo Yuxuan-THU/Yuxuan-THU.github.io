@@ -33,7 +33,7 @@ _2024.4.20_ **Campus Marathon @ Sino-Singapore Tianjin Eco-city 2024 !**
 
 ![图1](./city2024.mp4#center)
 
-_2024.4.21_ **Campus Marathon @ Sino-Singapore Tianjin Eco-city 2024 !**
+_2024.4.21_ **67th Ma John Cup Men's 10,000m Final (Group B) @ Tsinghua University 2024 !**
 
 * Chip Time: 45:25
 * Pace: 4:35
