@@ -14,8 +14,8 @@ main:
   - title: "Sports"
     url: /sports/
     
-  - title: "Misc"
-    url: /misc/
+  - title: "Talks"
+    url: /talks/
     
   - title: "CV (PDF)"
     url: /files/cv.pdf
