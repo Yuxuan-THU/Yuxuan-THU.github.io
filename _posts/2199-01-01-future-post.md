@@ -1,7 +1,7 @@
 ---
 title: 'Future Blog Post'
 date: 2199-01-01
-permalink: /Confucianism-development/brief-conclusion.html/
+permalink: /Power-Sharing/%E6%91%98%E8%A6%81.html/
 tags:
   - cool posts
   - category1
