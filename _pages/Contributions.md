@@ -25,14 +25,3 @@ I seek not individual trees, but a whole forest.
     {% include archive-single.html %}
   {% endfor %}
 {% endfor %}
-
-Lectures
-------
-
-
-
-Books
-------
-
-Papers
-------
