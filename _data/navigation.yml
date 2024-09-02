@@ -2,20 +2,20 @@
 # main links links
 main:
 
-  - title: "About Me"
-    url: /aboutme/
+  - title: "News"
+    url: /News/
 
   - title: "Research"
     url: /papers/
 
   # - title: "Blogs"
   #   url: /blog/
-    
-  - title: "Sports"
-    url: /sports/
-    
+  
   - title: "Talks"
     url: /talks/
+
+  - title: "Sports"
+    url: /sports/
     
   - title: "CV (PDF)"
     url: /files/cv.pdf

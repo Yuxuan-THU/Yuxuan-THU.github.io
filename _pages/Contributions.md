@@ -5,7 +5,7 @@ permalink: /Contributions/
 author_profile: true
 ---
 
-This page is my contribution to the academic community.
+I hope to contribute to the academic community.
 
 I never deny the importance of immersive reading of academic classics, especially in this information age where attention is severely fragmented. However, information—even if it focuses on the most valuable parts—is still infinite. We cannot cover everything, and breadth of academic reading matters.
 
