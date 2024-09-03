@@ -8,15 +8,58 @@ author_profile: true
 
 **Forged by Blood and Fire: The Resilient Elite Network of Chinese Communist Party (1921-1978)**
 
-
-<div style="margin-left: 2em;">
-
-</div>
-
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Portfolio Item</title>  
+    <style>  
+        .container {  
+            display: flex; /* 使用flex布局 */  
+            align-items: flex-start; /* 顶部对齐子元素 */  
+        }  
+        .image-container {  
+            flex: 0 0 33.3333%; /* 左边三分之一，不伸缩 */  
+            padding-right: 20px; /* 可选，为文本区域提供一些空间 */  
+            box-sizing: border-box; /* 确保内边距和边框包含在宽度内 */  
+        }  
+        .text-container {  
+            flex: 1; /* 右边剩余空间，自动伸缩 */  
+            padding-left: 20px; /* 可选，为文本提供一些内边距 */  
+            box-sizing: border-box; /* 同上 */  
+        }  
+        img {  
+            width: 100%; /* 使图片填充整个容器 */  
+            height: auto; /* 保持图片的原始宽高比 */  
+            display: block; /* 去除图片底部的默认间隙 */  
+        }  
+    </style>  
+</head>  
+<body>  
+  
+<div class="container">  
+    <div class="image-container">  
+        <img src="/images/network.jpg">  
+    </div>  
+    <div class="text-container">  
+        <!-- <h2>Portfolio Item Number 2</h2>   -->
+        <p>This is an item in your portfolio. It can have images or nice text. The image is placed on the left side, taking up about one third of the width, while the text takes up the remaining two thirds.</p>  
+    </div>  
+</div>  
+  
+</body>  
+</html>
 
 **How can discursive mobilization be possible —— A study based People's Daily (with [Kaiping Zhang](https://www.dps.tsinghua.edu.cn/info/1180/2342.htm))**
 
-<div style="margin-left: 2em;">
-We establishes a dataset of 1,414 numerical abbreviations based on texts from the People's Daily. From a rhetorical style perspective, the most frequent types of numerical abbreviations are 'numeral-morpheme' type, four-character length, and with the final tone being a falling tone. From the perspective of mobilization effects, this paper also verifies the temporal correlation between the frequency of numerical abbreviations and political mobilization. Through a case study of the patriotic health campaign, this paper further refines the concept of the 'discourse championship' in political mobilization. First, the central government incentivizes local governments, using 'core discourse' in combination with 'extended discourse' to leverage systemic mobilization. Second, local governments align with the central government, using 'discourse intensification' along with 'discourse transformation' to promote social mobilization. This study expands the quantitative research approach in discourse analysis and political mobilization, providing policy insights for optimizing the party’s governing discourse system.
-</div>
+<div class="container">  
+    <div class="image-container">  
+        <img src="/images/三个代表.jpg">  
+    </div>  
+    <div class="text-container">  
+        <!-- <h2>Portfolio Item Number 2</h2>   -->
+        <p>We establishes a dataset of 1,414 numerical abbreviations based on texts from the People's Daily. This paper also verifies the temporal correlation between the frequency of numerical abbreviations and political mobilization. Through a case study of the patriotic health campaign, this paper further refines the concept of the 'discourse championship' in political mobilization. Local governments align with the central government, using 'discourse intensification' along with 'discourse transformation' to promote social mobilization. </p>  
+    </div>  
+</div>  
+
 
