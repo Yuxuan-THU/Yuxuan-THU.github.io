@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 
-**Forged by Blood and Fire: The Resilient Elite Network of Chinese Communist Party (1921-1978)**
+**Forged by Blood and Fire: Explaining the Long-Term Cohesion of the CCP through Elite Networks (1927-1978)**
 
 <html lang="en">  
 <head>  
@@ -43,7 +43,7 @@ author_profile: true
     </div>  
     <div class="text-container">  
         <!-- <h2>Portfolio Item Number 2</h2>   -->
-        <p>This is an item in your portfolio. It can have images or nice text. The image is placed on the left side, taking up about one third of the width, while the text takes up the remaining two thirds.</p>  
+        <p>At times, even a ruler may find themselves in a precarious position when managing elites with complex factional identities. Having more complex factional identities, elites are enabled to utilize their substantial political capital to secure higher positions. Nonetheless, this advantage is accompanied by an increased risk of being purged, as close interactions with other elites may be perceived as a threat to the ruler.</p>  
     </div>  
 </div>  
   
@@ -58,7 +58,7 @@ author_profile: true
     </div>  
     <div class="text-container">  
         <!-- <h2>Portfolio Item Number 2</h2>   -->
-        <p>We establishes a dataset of 1,414 numerical abbreviations based on texts from the People's Daily. This paper also verifies the temporal correlation between the frequency of numerical abbreviations and political mobilization. Through a case study of the patriotic health campaign, this paper further refines the concept of the 'discourse championship' in political mobilization. Local governments align with the central government, using 'discourse intensification' along with 'discourse transformation' to promote social mobilization. </p>  
+        <p>We establishes a dataset of 1,414 numerical abbreviations（e.g., 五讲四美三热爱） based on the People's Daily and verifie the temporal correlation between the frequency of numerical abbreviations and political mobilization. Through a case study of the patriotic health campaign, we find that Local governments align with the central government, using 'discourse intensification' along with 'discourse transformation' to promote social mobilization. </p>  
     </div>  
 </div>  
 
