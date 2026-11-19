@@ -670,3 +670,94 @@ h1:before,
     color: #000;
   }
 }
+
+/* ---- language switch ---- */
+html[data-lang="en"] .zh { display: none !important; }
+html[data-lang="zh"] .en { display: none !important; }
+
+html[lang="zh-CN"] body {
+  font-family: "Trebuchet MS", Helvetica, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  line-height: 1.7;
+}
+
+.masthead__inner-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.masthead__menu {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.greedy-nav .visible-links {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.greedy-nav .visible-links.en,
+.greedy-nav .visible-links.zh {
+  display: flex;
+}
+
+html[data-lang="en"] .greedy-nav .visible-links.zh,
+html[data-lang="zh"] .greedy-nav .visible-links.en {
+  display: none;
+}
+
+.lang-toggle {
+  flex: 0 0 auto;
+  margin-left: 1rem;
+  padding: 0.2rem 0.7rem;
+  font: inherit;
+  font-size: 0.85em;
+  color: #494e52;
+  background: #fff;
+  border: 1px solid #bdc1c4;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lang-toggle:hover {
+  color: #224b8d;
+  border-color: #224b8d;
+}
+
+.author__urls li > a,
+.author__urls li {
+  line-height: 1.6;
+}
+
+.skills,
+.note {
+  color: #5c6266;
+}
+
+.note {
+  font-size: 0.9em;
+}
+
+.sidebar .author__avatar img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.page__content h2 {
+  margin-top: 1.2em;
+}
+
+@media (max-width: 57.7em) {
+  .author__urls { display: none; }
+}
+
+.author__urls li { white-space: normal; }
+.page__content { overflow-wrap: anywhere; }
+.page__content, .page, #main { min-width: 0; }
+@media (max-width: 57.7em) {
+  .page { float: none; width: 100%; clear: both; padding: 0; }
+  .page .page__inner-wrap, .page .page__inner-wrap .page__content { float: none; }
+  .sidebar { float: none; width: 100%; }
+  .masthead__menu { overflow-x: auto; }
+}

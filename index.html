@@ -1,13 +1,23 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Yuxuan Su - Homepage</title>
-    <meta name="description" content="Yuxuan Su, Ph.D. student in Computational Social Science at Tsinghua University.">
+    <title>Yuxuan Su</title>
+    <meta name="description" content="Yuxuan Su, Ph.D. student in Computational Social Science at Tsinghua University. Post-training data, AI for social science, and founder of Entropy Order.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#ffffff">
+    <script>
+      (function () {
+        var l = null;
+        try { l = localStorage.getItem("lang"); } catch (e) {}
+        if (l !== "zh" && l !== "en") l = /^zh/i.test(navigator.language || "") ? "zh" : "en";
+        document.documentElement.setAttribute("data-lang", l);
+        document.documentElement.lang = l === "zh" ? "zh-CN" : "en";
+        document.title = l === "zh" ? "苏宇轩" : "Yuxuan Su";
+      })();
+    </script>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="icon" type="image/svg+xml" href="assets/images/avatar.svg">
+    <link rel="icon" type="image/jpeg" href="assets/images/avatar.jpg">
   </head>
 
   <body>
@@ -15,20 +25,33 @@
       <div class="masthead__inner-wrap">
         <div class="masthead__menu">
           <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
-            <button aria-hidden="true" tabindex="-1"><span class="navicon"></span></button>
-            <ul class="visible-links">
-              <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a target="_self" href="#about-me">Homepage</a></li>
-              <li class="masthead__menu-item"><a target="_self" href="#about-me">About Me</a></li>
-              <li class="masthead__menu-item"><a target="_self" href="#research-interests">Research Interests</a></li>
-              <li class="masthead__menu-item"><a target="_self" href="#publications">Publications</a></li>
-              <li class="masthead__menu-item"><a target="_self" href="#experience">Experience</a></li>
-              <li class="masthead__menu-item"><a target="_self" href="#honors-and-awards">Honors and Awards</a></li>
-              <li class="masthead__menu-item"><a target="_self" href="#educations">Educations</a></li>
-              <li class="masthead__menu-item"><a target="_self" href="#contact">Contact</a></li>
+            <ul class="visible-links en">
+              <li class="masthead__menu-item"><a href="#about">About</a></li>
+              <li class="masthead__menu-item"><a href="#research">Research</a></li>
+              <li class="masthead__menu-item"><a href="#publications">Publications</a></li>
+              <li class="masthead__menu-item"><a href="#education">Education</a></li>
+              <li class="masthead__menu-item"><a href="#experience">Experience</a></li>
+              <li class="masthead__menu-item"><a href="#talks">Talks</a></li>
+              <li class="masthead__menu-item"><a href="#awards">Awards</a></li>
+              <li class="masthead__menu-item"><a href="#service">Teaching &amp; Service</a></li>
+              <li class="masthead__menu-item"><a href="#contact">Contact</a></li>
             </ul>
-            <ul class="hidden-links hidden"></ul>
+            <ul class="visible-links zh">
+              <li class="masthead__menu-item"><a href="#zh-about">关于我</a></li>
+              <li class="masthead__menu-item"><a href="#zh-research">研究</a></li>
+              <li class="masthead__menu-item"><a href="#zh-publications">论文</a></li>
+              <li class="masthead__menu-item"><a href="#zh-education">教育</a></li>
+              <li class="masthead__menu-item"><a href="#zh-experience">经历</a></li>
+              <li class="masthead__menu-item"><a href="#zh-talks">报告</a></li>
+              <li class="masthead__menu-item"><a href="#zh-awards">奖项</a></li>
+              <li class="masthead__menu-item"><a href="#zh-service">教学与服务</a></li>
+              <li class="masthead__menu-item"><a href="#zh-contact">联系</a></li>
+            </ul>
           </nav>
         </div>
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language / 切换语言">
+          <span class="en">中文</span><span class="zh">English</span>
+        </button>
       </div>
     </div>
 
@@ -36,167 +59,224 @@
       <div class="sidebar sticky">
         <div itemscope itemtype="https://schema.org/Person" class="profile_box">
           <div class="author__avatar">
-            <img src="assets/images/avatar.svg" class="author__avatar" alt="Yuxuan Su">
+            <img src="assets/images/avatar.jpg" class="author__avatar" alt="Yuxuan Su" width="600" height="600">
           </div>
 
           <div class="author__content">
-            <h3 class="author__name" itemprop="name">Yuxuan Su</h3>
-            <p class="author__bio" itemprop="affiliation">Tsinghua University</p>
+            <h3 class="author__name" itemprop="name"><span class="en">Yuxuan Su</span><span class="zh">苏宇轩</span></h3>
+            <p class="author__bio" itemprop="affiliation"><span class="en">Tsinghua University</span><span class="zh">清华大学</span></p>
           </div>
 
           <div class="author__urls-wrapper">
             <ul class="author__urls social-icons">
-              <li><div class="author__intro">Ph.D. student in Computational Social Science researching AI value alignment, AI for social science, and authoritarian governance.</div></li>
-              <li><span class="side-icon" aria-hidden="true">⌖</span> Beijing, China</li>
-              <li><span class="side-icon" aria-hidden="true">▦</span> Department of Social Science</li>
-              <li><a href="https://www.tsinghua.edu.cn/en/"><span class="side-icon" aria-hidden="true">↗</span> Tsinghua University</a></li>
-              <li><a href="assets/files/Resume_Yuxuan_Su.pdf"><span class="side-icon" aria-hidden="true">▤</span> CV</a></li>
-              <li><a href="https://entropyorder.github.io/Entropyorder/"><span class="side-icon" aria-hidden="true">▣</span> Entropy Order</a></li>
+              <li class="en">Ph.D. student, Computational Social Science</li>
+              <li class="zh">计算社会科学博士生</li>
+              <li><span class="en">Beijing, China</span><span class="zh">北京</span></li>
+              <li><a href="assets/files/Resume_Yuxuan_Su.pdf"><span class="en">CV (PDF)</span><span class="zh">简历 (PDF)</span></a></li>
+              <li><a href="https://github.com/Yuxuan-THU">GitHub</a></li>
+              <li><a href="https://entropyorder.github.io/Entropyorder/">Entropy Order</a></li>
             </ul>
-            <div class="author__urls_sm" aria-label="Compact profile links">
-              <a href="assets/files/Resume_Yuxuan_Su.pdf" title="CV">CV</a>
-              <a href="https://www.tsinghua.edu.cn/en/" title="Tsinghua University">THU</a>
-              <a href="https://entropyorder.github.io/Entropyorder/" title="Entropy Order">EO</a>
+            <div class="author__urls_sm" aria-label="Profile links">
+              <a href="assets/files/Resume_Yuxuan_Su.pdf">CV</a>
+              <a href="https://github.com/Yuxuan-THU">GitHub</a>
+              <a href="https://entropyorder.github.io/Entropyorder/">Entropy Order</a>
             </div>
           </div>
         </div>
       </div>
 
-      <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Yuxuan Su - Homepage">
+      <article class="page">
         <div class="page__inner-wrap">
-          <section class="page__content" itemprop="text">
-            <p><span class="anchor" id="about-me"></span></p>
 
-            <h1 id="-about-me">👨‍🎓 About Me</h1>
-            <p>I am <strong>Yuxuan Su</strong>, a Ph.D. student in <strong>Computational Social Science</strong> at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>. I am based in the Department of Social Science, Haidian District, Beijing, China.</p>
-            <p>My research sits at the intersection of AI alignment, computational social science, and political governance. I study how diverse human preferences, institutional norms, and social choice mechanisms can be incorporated into AI systems, while also examining the methodological role and governance risks of AI in social scientific discovery.</p>
-            <p>I received my B.A. in History from Tsinghua University in June 2025, with a GPA of <strong>3.99/4.0</strong> and ranking in the <strong>top 1%</strong>. I am also the Founder &amp; CEO of <a href="https://entropyorder.github.io/Entropyorder/">Beijing Entropy Order Technology Co., Ltd.</a>, an AI alignment data provider for LLM developers.</p>
+          <!-- ============ English ============ -->
+          <section class="page__content en">
+            <h1 id="about">About</h1>
+            <p>I'm Yuxuan Su, a Ph.D. student in Computational Social Science at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a> in Beijing. I did my undergraduate degree here too, in History (B.A., 2025, GPA 3.99/4.0). Going from history to AI is a slightly unusual route, and I'm still drawn to political science and the history of the Chinese Communist Party.</p>
+            <p>Alongside the Ph.D., I run <a href="https://entropyorder.github.io/Entropyorder/">Entropy Order</a>, a company that provides AI alignment data to LLM developers. We're at roughly US$4 million in ARR and work with frontier AI labs in China and abroad. The company and the first research question below are closely connected.</p>
+            <p>Away from the desk I like sports. I've run a half marathon in 1 hour 30 minutes (April 16, 2025), and I can do 27 overhand-grip pull-ups in one set (May 31, 2026).</p>
 
-            <h1 id="research-interests">🔬 Research Interests</h1>
-            <ul>
-              <li><p><strong>AI Value Alignment:</strong> I study how diverse human preferences, social choice mechanisms, and institutional norms can be incorporated into AI alignment, enabling models to navigate value pluralism and conflict rather than optimize for a single preference.</p></li>
-              <li><p><strong>AI for Social Science:</strong> I explore AI's methodological role in social scientific discovery, with particular attention to improving the reliability and validity of AI tools for long-horizon social simulation tasks.</p></li>
-              <li><p><strong>Authoritarian Governance and AI Surveillance:</strong> I examine how authoritarian states use AI for social monitoring, opinion manipulation, censorship, and repression, and how technical, institutional, and governance safeguards can reduce risks to human rights and public freedoms.</p></li>
-            </ul>
+            <h1 id="research">Research</h1>
+            <p>My work currently follows two lines.</p>
+            <p><strong>What post-training data and environments can add to a model.</strong> Better data and better training environments clearly improve models, but it is less clear when they push the edge of what a model can do and when they only polish what it could already do. I want to understand where that boundary sits, what kinds of data, tasks, and feedback move it, and how to tell the two cases apart.</p>
+            <p><strong>How AI can speed up discovery in social science.</strong> I'm interested in the practical route, not the slogan: what has to be true for an AI tool to help with real research rather than produce plausible-looking papers. So far this has meant three kinds of work: using LLMs to structure and annotate large archives of political and historical text; making statistical inference hold up when model outputs fluctuate from run to run; and multi-agent simulation for policy research.</p>
+            <p>Earlier on, I also studied how Chinese LLMs are shaped by regulation and how deployment choices change the values a model expresses. That work is in the publications below.</p>
 
-            <h1 id="publications">📝 Publications</h1>
-            <h2 id="peer-reviewed-articles">Peer-reviewed Articles</h2>
+            <h1 id="publications">Publications</h1>
+            <h2>Peer-reviewed</h2>
             <ol class="publication-list">
-              <li><p>Tianguang Meng and <strong>Yuxuan Su</strong>, "A Large Language Model-Based Method for Classifying Political Historical Materials: From Historical Material Structuring to Intelligent Annotation," <em>Fudan Journal (Social Sciences Edition)</em> (复旦学报(社会科学版)), Vol. 68, No. 2, 2026, pp. 153-167. [In Chinese]</p></li>
-              <li><p>Mingxuan Liu, <strong>Yuxuan Su</strong>, and Tianguang Meng, "Stratified Regulation: Unpacking Value Alignment of Chinese LLMs," <em>Chinese Sociological Review</em>, 2026, 1-33, <a href="https://www.tandfonline.com/doi/full/10.1080/21620555.2026.2714528">DOI: 10.1080/21620555.2026.2714528</a>.</p></li>
-              <li><p><strong>Yuxuan Su</strong>, "Large Language Models Leading the Intelligent Computing Paradigm of Text Analysis," <em>Chinese Social Sciences Today</em> (中国社会科学报), forthcoming. [In Chinese]</p></li>
-              <li><p><strong>Yuxuan Su</strong>, Mingxuan Liu, and Tianguang Meng, "Decoding Value Alignment in Large Language Models: A Comparative Study of Cloud-Based and Local Deployments," revise and resubmit at <em>Journalism &amp; Communication</em> (新闻与传播研究). [In Chinese]</p></li>
-              <li><p>Tianguang Meng and <strong>Yuxuan Su</strong>, "Policy Simulator: A New Paradigm for Policy Research under a Multi-Agent Framework," revise and resubmit at <em>Journal of Public Management</em> (公共管理学报). [In Chinese]</p></li>
+              <li>Tianguang Meng and <strong>Yuxuan Su</strong>. "A Large Language Model-Based Method for Classifying Political Historical Materials: From Historical Material Structuring to Intelligent Annotation." <em>Fudan Journal (Social Sciences Edition)</em> (复旦学报(社会科学版)), 68(2), 2026, 153-167. [In Chinese]</li>
+              <li>Mingxuan Liu, <strong>Yuxuan Su</strong>, and Tianguang Meng. "Stratified Regulation: Unpacking Value Alignment of Chinese LLMs." <em>Chinese Sociological Review</em>, 2026, 1-33. <a href="https://www.tandfonline.com/doi/full/10.1080/21620555.2026.2714528">DOI: 10.1080/21620555.2026.2714528</a></li>
+              <li><strong>Yuxuan Su</strong>. "Large Language Models Leading the Intelligent Computing Paradigm of Text Analysis." <em>Chinese Social Sciences Today</em> (中国社会科学报), forthcoming. [In Chinese]</li>
             </ol>
-
-            <h2 id="working-papers">Working Papers</h2>
-            <ol class="publication-list">
-              <li><p><strong>Yuxuan Su</strong> and Tianguang Meng, "Large Language Models Empowering Text Analysis: Applications, Opportunities, and Challenges"</p></li>
-              <li><p><strong>Yuxuan Su</strong> and Jianjun Yu, "Robust Inference for AI-Powered Text Analysis under Output Fluctuations"</p></li>
-              <li><p><strong>Yuxuan Su</strong> and Xiaohong Yu, "Elite Networks and State Building: Power Sharing Dynamics in China, 1921-1976"</p></li>
+            <h2>Under review</h2>
+            <ol class="publication-list" start="4">
+              <li><strong>Yuxuan Su</strong>, Mingxuan Liu, and Tianguang Meng. "Decoding Value Alignment in Large Language Models: A Comparative Study of Cloud-Based and Local Deployments." Revise and resubmit, <em>Journalism &amp; Communication</em> (新闻与传播研究). [In Chinese]</li>
+              <li>Tianguang Meng and <strong>Yuxuan Su</strong>. "Policy Simulator: A New Paradigm for Policy Research under a Multi-Agent Framework." Revise and resubmit, <em>Journal of Public Management</em> (公共管理学报). [In Chinese]</li>
             </ol>
-
-            <h1 id="experience">💼 Experience</h1>
-            <h2 id="industrial-experience">Industrial Experience</h2>
+            <h2>Working papers</h2>
             <ul>
-              <li>
-                <p><em>Aug. 2025 - Present</em>, <strong>Founder &amp; CEO</strong>, <a href="https://entropyorder.github.io/Entropyorder/">Beijing Entropy Order Technology Co., Ltd.</a> (北京熵基秩序科技有限公司).</p>
-                <ul>
-                  <li>Company Overview: AI alignment data provider for LLM developers.</li>
-                  <li>Fundraising: Raised US$300,000 seed funding from <a href="https://mplus-gallery.nimbus-nimo.com/project/2025F-020">YC China</a>.</li>
-                  <li>Business Performance: Achieved RMB 8.0 million (US$1.18 million) net profit (2026).</li>
-                  <li>Client Portfolio: <a href="https://ai.meta.com/">Meta Superintelligence Labs</a>, <a href="https://seed.bytedance.com/en/">ByteDance Seed</a>, <a href="https://qwen.ai/">Alibaba Qwen</a>, <a href="https://z.ai/">Zhipu AI</a>, <a href="https://www.ant-ling.com/en/">Ant BaiLing</a>, <a href="https://github.com/rednote-hilab">Xiaohongshu</a>.</li>
-                </ul>
-              </li>
+              <li><strong>Yuxuan Su</strong> and Tianguang Meng. "Large Language Models Empowering Text Analysis: Applications, Opportunities, and Challenges."</li>
+              <li><strong>Yuxuan Su</strong> and Jianjun Yu. "Robust Inference for AI-Powered Text Analysis under Output Fluctuations."</li>
+              <li><strong>Yuxuan Su</strong> and Xiaohong Yu. "Elite Networks and State Building: Power Sharing Dynamics in China, 1921-1976."</li>
             </ul>
 
-            <h2 id="research-assistant">Research Assistant</h2>
+            <h1 id="education">Education</h1>
             <ul>
-              <li><em>July 2024 - Present</em>, Research Assistant to Prof. Junyan Jiang, Columbia University.</li>
-              <li><em>July 2024 - Present</em>, Research Assistant to Prof. Peng Peng, Washington University in St. Louis.</li>
-              <li><em>May 2024 - Present</em>, Research Assistant to Prof. Ruixue Jia, University of California, San Diego.</li>
-              <li><em>April 2024 - May 2024</em>, Research Assistant to Prof. Kaiping Zhang, Tsinghua University.</li>
-              <li><em>April 2022 - September 2022</em>, Research Assistant to Prof. Xuedong Yang, Tsinghua University.</li>
-              <li><em>March 2022 - September 2022</em>, Research Assistant to Prof. Yue Hu, Tsinghua University.</li>
+              <li><em>Aug. 2025 - present</em>. Ph.D. student, Computational Social Science, Tsinghua University.</li>
+              <li><em>June 2025</em>. B.A., History, Tsinghua University. GPA 3.99/4.0, top 1%.</li>
+            </ul>
+            <p class="skills"><strong>Languages:</strong> Chinese (native), English. <strong>Tools:</strong> Python, Java, Bash, LaTeX.</p>
+
+            <h1 id="experience">Experience</h1>
+            <p><em>Aug. 2025 - present</em>. <strong>Founder &amp; CEO</strong>, <a href="https://entropyorder.github.io/Entropyorder/">Entropy Order</a> (北京熵基秩序科技有限公司). We build AI alignment data for LLM developers. Raised a US$300,000 seed round from <a href="https://mplus-gallery.nimbus-nimo.com/project/2025F-020">YC China</a>; about US$4 million ARR; customers include leading AI labs in China and abroad.</p>
+            <h2>Research assistant</h2>
+            <ul>
+              <li><em>July 2024 - present</em>. Prof. Junyan Jiang, Columbia University.</li>
+              <li><em>July 2024 - present</em>. Prof. Peng Peng, Washington University in St. Louis.</li>
+              <li><em>May 2024 - present</em>. Prof. Ruixue Jia, UC San Diego.</li>
+              <li><em>Apr. - May 2024</em>. Prof. Kaiping Zhang, Tsinghua University.</li>
+              <li><em>Mar. - Sept. 2022</em>. Prof. Yue Hu, Tsinghua University.</li>
+              <li><em>Apr. - Sept. 2022</em>. Prof. Xuedong Yang, Tsinghua University.</li>
             </ul>
 
-            <h1 id="presentations">🎤 Presentations</h1>
-            <h2 id="conferences-talks">Conferences &amp; Talks</h2>
+            <h1 id="talks">Talks</h1>
             <ul>
               <li>Social Science History Association Annual Conference, October 2025.</li>
               <li>American Political Science Association Annual Meeting, September 2025.</li>
-              <li>The 13th Beijing Youth Political Science Forum, June 2024 [one of only two undergraduates selected].</li>
-              <li>Spark Style in My Eyes: Interdisciplinary, Tsinghua Committee of the Communist Youth League, June 2024.</li>
-              <li>The 7th Workshop on Historical Politics, April 2024 [only undergraduate selected].</li>
-              <li>The 8th Inter-generational Dialogue Academic Symposium, December 2023.</li>
+              <li>13th Beijing Youth Political Science Forum, June 2024 (one of two undergraduates selected).</li>
+              <li>Tsinghua Youth League "Spark Style in My Eyes" interdisciplinary session, June 2024.</li>
+              <li>7th Workshop on Historical Politics, April 2024 (the only undergraduate selected).</li>
+              <li>8th Inter-generational Dialogue Academic Symposium, December 2023.</li>
             </ul>
 
-            <h1 id="honors-and-awards">🥇 Honors and Awards</h1>
-            <h2 id="grants">Grants</h2>
+            <h1 id="awards">Awards</h1>
             <ul>
-              <li><em>2022-2023</em>, "Future Scholar" Grant for Student-Initiated Research and Project, Tsinghua University, ¥160,000 (Equivalent to $22,500) [Awarded to only 9 Students, top 0.1%].</li>
-              <li><em>2022-2024</em>, Spark Scientific and Technological Innovation Grant for Undergraduates, Tsinghua University, ¥10,000 (Equivalent to $1,400) [top 1%].</li>
-              <li><em>2022-2024</em>, Research Grant for Undergraduate Student Projects, Tsinghua University, ¥30,000 (Equivalent to $4,200).</li>
+              <li><em>2025</em>. Best B.A. Thesis Award (first in the school), Tsinghua University.</li>
+              <li><em>2024</em>. Tsinghua Top Prize finalist (15 undergraduates university-wide).</li>
+              <li><em>2022-2023</em>. "Future Scholar" grant for student-initiated research, Tsinghua University, ¥160,000 (9 students university-wide).</li>
+              <li><em>2022</em>. First Prize, 40th Challenge Cup for Scientific Research, Tsinghua University.</li>
+              <li>Several other university research grants and scholarships, 2020-2024.</li>
             </ul>
 
-            <h2 id="fellowships-awards">Fellowships &amp; Awards</h2>
+            <h1 id="service">Teaching &amp; Service</h1>
             <ul>
-              <li><em>2025</em>, Best B.A. Thesis Award (top 1 in the School), Tsinghua University [top 1%].</li>
-              <li><em>2024</em>, Tsinghua Top Prize Finalist Scholarship, Tsinghua University [Awarded to only 15 undergraduates, top 0.1%].</li>
-              <li><em>2023</em>, Outstanding Graduate Student Award in Beijing, Beijing Municipal Education Commission.</li>
-              <li><em>2023</em>, Outstanding Graduate Student Award (top 1 in the School), Tsinghua University [top 1%].</li>
-              <li><em>2022</em>, First Prize in the 40th Challenge Cup for Scientific Research, Tsinghua University.</li>
-              <li><em>2021</em>, Social Work Excellence Scholarship, Tsinghua University.</li>
-              <li><em>2021</em>, Scientific Innovation Excellence Scholarship, Tsinghua University.</li>
-              <li><em>2021</em>, Excellent Oral Presentation Award in 2021 Student Research Conference, Tsinghua University.</li>
-              <li><em>2020</em>, All-Round Excellence Scholarship, Tsinghua University [top 20%].</li>
+              <li><em>Summer 2026</em>. Teaching, Global Fieldwork Survey (全球田野调查, GDD), Tsinghua University (undergraduate).</li>
+              <li><em>June 2024 - present</em>. Vice President, 43rd Student Association of Science and Technology, Tsinghua University.</li>
+              <li><em>July 2024 - present</em>. President, Student Association of Science and Technology, Zhishan College.</li>
+              <li><em>June 2025 - present</em>. Science and Technology Innovation Counselor, Zhishan College.</li>
+              <li><em>June 2023 - present</em>. Chair, 17th "Spark Project" Academic Talent Training Program.</li>
+              <li><em>May 2023 - May 2024</em>. President, Student Governance Modernization Research Association.</li>
+              <li>Member of the Midwest Political Science Association (2024-) and the American Political Science Association (2025-).</li>
             </ul>
 
-            <h1 id="educations">📖 Educations</h1>
-            <ul>
-              <li><em>August 2025 - Present</em>, Ph.D. Student, Computational Social Science, Tsinghua University, Beijing, China.</li>
-              <li><em>June 2025</em>, B.A., History, Tsinghua University, Beijing, China. GPA: <strong>3.99/4.0</strong>, Ranking: top 1%.</li>
-            </ul>
-
-            <h1 id="teaching-and-service">🧑‍🏫 Teaching and Service</h1>
-            <h2 id="teaching-experience">Teaching Experience</h2>
-            <ul>
-              <li><em>Summer 2026</em>, [Undergraduate] Global Fieldwork Survey (全球田野调查, GDD), Tsinghua University.</li>
-            </ul>
-
-            <h2 id="service">Service</h2>
-            <ul>
-              <li><em>June 2024 - Present</em>, Vice President, The 43rd Student Association of Science and Technology, Tsinghua University.</li>
-              <li><em>February 2024 - June 2024</em>, Group leader, Science and technology innovation center, Tsinghua Youth League Committee.</li>
-              <li><em>July 2024 - Present</em>, President, Student Association of Science and Technology, Zhishan College, Tsinghua University.</li>
-              <li><em>June 2025 - Present</em>, Science and Technology Innovation Counselor, Zhishan College, Tsinghua University.</li>
-              <li><em>June 2023 - Present</em>, Chairman, The 17th "Spark Project" Academic Talent Training Program, Tsinghua University.</li>
-              <li><em>May 2023 - May 2024</em>, President, Student Governance Modernization Research Association, Tsinghua University.</li>
-            </ul>
-
-            <h2 id="membership">Membership</h2>
-            <ul>
-              <li>Midwest Political Science Association, 2024-present.</li>
-              <li>American Political Science Association, 2025-present.</li>
-            </ul>
-
-            <h1 id="languages-and-skills">🧰 Languages and Skills</h1>
-            <ul>
-              <li><strong>Languages:</strong> Chinese (native), English.</li>
-              <li><strong>ML &amp; AI Alignment:</strong> Preference learning, reinforcement learning from human feedback, preference data interpretation, reward modeling.</li>
-              <li><strong>Coding:</strong> Python, Java, Bash, LaTeX.</li>
-              <li><strong>Misc.:</strong> Academic research and writing, teaching, small-scale management.</li>
-            </ul>
-
-            <h2 id="contact">📞 Contact</h2>
-            <p><em>Yuxuan Su</em></p>
-            <p>Department of Social Science<br>
-            <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a><br>
-            Haidian District, Beijing 100084, China</p>
+            <h1 id="contact">Contact</h1>
+            <p>Department of Social Science, <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>, Haidian District, Beijing 100084, China.<br>
+            Code: <a href="https://github.com/Yuxuan-THU">github.com/Yuxuan-THU</a></p>
           </section>
+
+          <!-- ============ 中文 ============ -->
+          <section class="page__content zh">
+            <h1 id="zh-about">关于我</h1>
+            <p>我是苏宇轩，在<a href="https://www.tsinghua.edu.cn/">清华大学</a>读计算社会科学博士。本科也在清华，读的是历史学（2025 年毕业，GPA 3.99/4.0）。从历史走到 AI 算是条不太常见的路，我至今仍对政治学和中国共产党历史很感兴趣。</p>
+            <p>读博的同时，我在做<a href="https://entropyorder.github.io/Entropyorder/">熵基秩序</a>，给大模型厂商提供 AI 对齐数据。目前 ARR 约 400 万美元，国内外头部的前沿 AI 实验室都有合作。这家公司和下面的第一个研究问题关系很近。</p>
+            <p>平时喜欢运动。半程马拉松跑进过 1 小时 30 分钟（2025 年 4 月 16 日），正握引体向上一组做过 27 个（2026 年 5 月 31 日）。</p>
+
+            <h1 id="zh-research">研究</h1>
+            <p>目前主要做两件事。</p>
+            <p><strong>后训练数据和环境，能给模型带来什么。</strong>更好的数据、更好的训练环境确实能让模型变强，但它们什么时候是在推动能力边界，什么时候只是把模型本来就会的东西打磨得更顺，这一点并不清楚。我想弄明白这条边界在哪里，什么样的数据、任务和反馈能把它往外推，以及怎么区分这两种情况。</p>
+            <p><strong>AI 怎样加速社会科学的发现。</strong>我关心的是具体能走通的路，而不是口号：AI 工具要满足什么条件，才能真正帮上研究，而不是写出一篇看起来像样的论文。到目前为止，做过三类事：用大模型对大规模政治与历史文本做结构化和标注；让统计推断在模型输出每次都有波动的情况下依然成立；以及面向政策研究的多智能体模拟。</p>
+            <p>更早的时候，我还研究过中国大模型如何受到监管的塑造，以及部署方式的不同如何改变模型表达出的价值取向。这部分工作见下面的论文。</p>
+
+            <h1 id="zh-publications">论文</h1>
+            <h2>已发表</h2>
+            <ol class="publication-list">
+              <li>孟天广、<strong>苏宇轩</strong>。“A Large Language Model-Based Method for Classifying Political Historical Materials: From Historical Material Structuring to Intelligent Annotation”。《复旦学报（社会科学版）》，2026 年第 68 卷第 2 期，153-167 页。[中文]</li>
+              <li>Mingxuan Liu, <strong>Yuxuan Su</strong>, and Tianguang Meng. "Stratified Regulation: Unpacking Value Alignment of Chinese LLMs." <em>Chinese Sociological Review</em>, 2026, 1-33. <a href="https://www.tandfonline.com/doi/full/10.1080/21620555.2026.2714528">DOI: 10.1080/21620555.2026.2714528</a></li>
+              <li><strong>苏宇轩</strong>。“Large Language Models Leading the Intelligent Computing Paradigm of Text Analysis”。《中国社会科学报》，即将刊发。[中文]</li>
+            </ol>
+            <h2>在审</h2>
+            <ol class="publication-list" start="4">
+              <li><strong>苏宇轩</strong>、Mingxuan Liu、孟天广。“Decoding Value Alignment in Large Language Models: A Comparative Study of Cloud-Based and Local Deployments”。《新闻与传播研究》，修改后再投。[中文]</li>
+              <li>孟天广、<strong>苏宇轩</strong>。“Policy Simulator: A New Paradigm for Policy Research under a Multi-Agent Framework”。《公共管理学报》，修改后再投。[中文]</li>
+            </ol>
+            <h2>工作论文</h2>
+            <ul>
+              <li><strong>Yuxuan Su</strong> and Tianguang Meng. "Large Language Models Empowering Text Analysis: Applications, Opportunities, and Challenges."</li>
+              <li><strong>Yuxuan Su</strong> and Jianjun Yu. "Robust Inference for AI-Powered Text Analysis under Output Fluctuations."</li>
+              <li><strong>Yuxuan Su</strong> and Xiaohong Yu. "Elite Networks and State Building: Power Sharing Dynamics in China, 1921-1976."</li>
+            </ul>
+            <p class="note">注：论文题目保留英文原题。</p>
+
+            <h1 id="zh-education">教育</h1>
+            <ul>
+              <li><em>2025.08 - 至今</em>。清华大学，计算社会科学，博士在读。</li>
+              <li><em>2025.06</em>。清华大学，历史学学士。GPA 3.99/4.0，专业前 1%。</li>
+            </ul>
+            <p class="skills"><strong>语言：</strong>中文（母语）、英语。<strong>工具：</strong>Python、Java、Bash、LaTeX。</p>
+
+            <h1 id="zh-experience">经历</h1>
+            <p><em>2025.08 - 至今</em>。<strong>创始人兼 CEO</strong>,<a href="https://entropyorder.github.io/Entropyorder/">北京熵基秩序科技有限公司</a>。为大模型厂商提供 AI 对齐数据。获 <a href="https://mplus-gallery.nimbus-nimo.com/project/2025F-020">YC China</a> 30 万美元种子轮融资；ARR 约 400 万美元；客户覆盖国内外头部 AI 实验室。</p>
+            <h2>科研助理</h2>
+            <ul>
+              <li><em>2024.07 - 至今</em>。Prof. Junyan Jiang，哥伦比亚大学。</li>
+              <li><em>2024.07 - 至今</em>。Prof. Peng Peng，圣路易斯华盛顿大学。</li>
+              <li><em>2024.05 - 至今</em>。Prof. Ruixue Jia，加州大学圣迭戈分校。</li>
+              <li><em>2024.04 - 2024.05</em>。Prof. Kaiping Zhang，清华大学。</li>
+              <li><em>2022.03 - 2022.09</em>。Prof. Yue Hu，清华大学。</li>
+              <li><em>2022.04 - 2022.09</em>。Prof. Xuedong Yang，清华大学。</li>
+            </ul>
+
+            <h1 id="zh-talks">报告</h1>
+            <ul>
+              <li>社会科学史学会（SSHA）年会，2025 年 10 月。</li>
+              <li>美国政治学会（APSA）年会，2025 年 9 月。</li>
+              <li>第十三届北京青年政治学论坛，2024 年 6 月（两位入选的本科生之一）。</li>
+              <li>Tsinghua Youth League “Spark Style in My Eyes” 交叉学科专场，2024 年 6 月。</li>
+              <li>第七届历史政治学工作坊，2024 年 4 月（唯一入选的本科生）。</li>
+              <li>第八届代际对话学术研讨会，2023 年 12 月。</li>
+            </ul>
+
+            <h1 id="zh-awards">奖项</h1>
+            <ul>
+              <li><em>2025</em>。清华大学最佳本科毕业论文（全院第一）。</li>
+              <li><em>2024</em>。清华大学特等奖学金答辩入围（全校本科生 15 人）。</li>
+              <li><em>2022-2023</em>。清华大学“未来学者”学生自主科研资助，16 万元（全校 9 人）。</li>
+              <li><em>2022</em>。清华大学第四十届“挑战杯”科研竞赛一等奖。</li>
+              <li>另有若干校级科研资助与奖学金，2020-2024。</li>
+            </ul>
+
+            <h1 id="zh-service">教学与服务</h1>
+            <ul>
+              <li><em>2026 年夏季</em>。清华大学本科课程《全球田野调查》（GDD）教学。</li>
+              <li><em>2024.06 - 至今</em>。清华大学第四十三届学生科协副主席。</li>
+              <li><em>2024.07 - 至今</em>。Zhishan College 学生科协主席（清华大学）。</li>
+              <li><em>2025.06 - 至今</em>。Zhishan College 科技创新辅导员。</li>
+              <li><em>2023.06 - 至今</em>。清华大学第十七期“星火计划”学术人才培养项目主席。</li>
+              <li><em>2023.05 - 2024.05</em>。Student Governance Modernization Research Association 会长（清华大学）。</li>
+              <li>美国中西部政治学会（2024 起）、美国政治学会（2025 起）会员。</li>
+            </ul>
+
+            <h1 id="zh-contact">联系</h1>
+            <p>北京市海淀区清华大学社会科学学院，100084。<br>
+            代码：<a href="https://github.com/Yuxuan-THU">github.com/Yuxuan-THU</a></p>
+          </section>
+
         </div>
       </article>
     </div>
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        document.getElementById("lang-toggle").addEventListener("click", function () {
+          var next = root.getAttribute("data-lang") === "zh" ? "en" : "zh";
+          root.setAttribute("data-lang", next);
+          root.lang = next === "zh" ? "zh-CN" : "en";
+          document.title = next === "zh" ? "苏宇轩" : "Yuxuan Su";
+          try { localStorage.setItem("lang", next); } catch (e) {}
+          window.scrollTo(0, 0);
+        });
+      })();
+    </script>
   </body>
 </html>
